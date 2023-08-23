@@ -1,0 +1,171 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Center the main content */
+.animatediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style for the country dropdown */
+.country-dropdown {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style for the label */
+.country-dropdown label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the select element */
+.country-dropdown select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* Apply styles when the select element is focused */
+.country-dropdown select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Style for the dropdown arrow icon */
+.country-dropdown select::after {
+    content: '\25BE';
+    /* Unicode down arrow character */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+}
+
+/* Remove default browser dropdown arrow */
+.country-dropdown select::-ms-expand {
+    display: none;
+}
+
+
+.animatediv img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#flag {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Style the card deck */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    flex-basis: calc(33.33% - 70px);
+    margin: 10px;
+}
+
+/* Style the card content */
+.card-title {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    padding: 20px;
+
+}
+.card-body{
+    border-radius: 20px;
+    width: 80%;
+    padding: 20px;
+    font-weight: bold;
+}
+/* Apply different background colors to cards */
+.card-body.bg-primary {
+    background-color: #007bff;
+    
+}
+
+.card-body.bg-info {
+    background-color: #17a2b8;
+}
+
+.card-body.bg-warning {
+    background-color: #ffc107;
+}
+
+.card-body.bg-danger {
+    background-color: #dc3545;
+}
+
+.card-body.bg-success {
+    background-color: #28a745;
+}
+
+.card-body.bg-secondary {
+    background-color: #6c757d;
+}
+
+/* Style the badge */
+.badge {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* Add responsive styles for small screens */
+@media (max-width: 768px) {
+    .card-deck {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+}
